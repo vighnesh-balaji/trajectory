@@ -5,7 +5,8 @@ This project plans a real-time trajectory of a self-driving car using onboard ca
 - [Install Requirements](#install-requirements)
 - [General Functions](#general-functions)
     - [Capture an Image](#capture-an-image)
-    - []()
+    - [Car Acceleration](#car-acceleration)
+    - [Release Control of Car](#release-control-of-car)
 - [Software Information](#software-information)
 
 ## Install Requirements
@@ -28,6 +29,16 @@ If no parameters are specified, the function captures one image instantaneously.
 Start accelerating
 ```python
 selfdrive.accelerate()
+```
+Stop accelerating
+```python
+selfdrive.stop_accelerate()
+```
+
+### Release Control of Car
+Release all control from the car
+```python
+selfdrive.release_control()
 ```
 
 ## Software Information

@@ -38,4 +38,6 @@ def release_control():
 
 # code to run when this file is executed
 if __name__ == __main__:
-    capture(10, 5)
+    accelerate()
+    capture(10, 2)
+    stop_accelerate()

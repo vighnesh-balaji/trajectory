@@ -37,7 +37,10 @@ def release_control():
     pg.keyUp('w')
 
 # code to run when this file is executed
-if __name__ == __main__:
+if __name__ == '__main__':
+    time.sleep(5)
     accelerate()
     capture(10, 2)
     stop_accelerate()
+
+    release_control()

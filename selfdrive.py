@@ -1,3 +1,4 @@
+import pyautogui as pg
 import os
 import time
 
@@ -21,6 +22,19 @@ def capture(number=1, delay=0):
         os.system("scrot input/image" + str(file_index) + ".jpg")
         # increase file_index for next image capture
         file_index += 1
+
+# accelerate the car in Carla simulator
+def accelerate():
+    pg.keyDown('w')
+
+# stop accelerating the car in Carla simulator
+def stop_accelerate():
+    pg.keyUp('w')
+
+# release control of the car
+def release_control():
+    # release all pressed keys
+    pg.keyUp('w')
 
 # code to run when this file is executed
 if __name__ == __main__:
